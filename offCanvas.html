@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="offCanvas.css">
+        <title>Grid Layout Leer</title>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+            <img class="headerImg" alt="Banner" src="bannerResponsive.png" width="100%">
+            <h1 class="headerText" id="mainHeading">Responsive Layouts</h1>
+            <button class="headerButtonLeft" onclick="openNav()"><img alt="Banner" src="menuButton.png"></button>
+            <button class="headerButtonRight" onclick="openSources()"><img alt="Banner" src="quellen.png"></button>
+        </header>
+        <div class="sidenav" id="mySidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <ul>
+                <li id="menue"><a href="#">Not Responsive</a></li>
+                <li id="menue"><a href="#">Mostly Fluid</a></li>
+                <li id="menue"><a href="#">Column Drop</a></li>
+                <li id="menue"><a href="#">Layout Shifter</a></li>
+                <li id="menue"><a href="#">Off-Canvas</a></li>
+            </ul>
+        </div>
+            <div id="navigation" class="sidenav">
+                <ul>
+                    <li id="menue"><a href="#">Not Responsive</a></li>
+                    <li id="menue"><a href="#">Mostly Fluid</a></li>
+                    <li id="menue"><a href="columnDrop.html">Column Drop</a></li>
+                    <li id="menue"><a href="#">Layout Shifter</a></li>
+                    <li id="menue"><a href="#">Off-Canvas</a></li>
+                </ul>
+            </div>
+            <div id="main">
+                <h1>Off-Canvas</h1>
+                <p>
+                    Das Off-Canvas-Layout ist eine fortschrittliche Technik im Bereich des responsiven Webdesigns, 
+                    die dazu dient, den begrenzten Bildschirmplatz auf mobilen Geräten optimal zu nutzen. 
+                    Im Wesentlichen handelt es sich dabei um eine Methode, bei der der Hauptinhalt außerhalb des 
+                    sichtbaren Bereichs verschoben wird und nur bei Bedarf eingeblendet wird.
+                </p>
+                <h2>Was ist Off-Canvas?</h2>
+                <p>
+                    Off-Canvas bezieht sich auf einen Bereich außerhalb des aktuellen Anzeigebereichs, der 
+                    normalerweise unsichtbar ist. Bei der Anwendung auf Webdesign wird der Hauptinhalt außerhalb 
+                    des sichtbaren Bildschirms platziert und kann durch Interaktionen wie das Klicken auf ein Hamburger-Menü 
+                    oder das Wischen nach links eingeblendet werden.
+                </p>
+                <h2>Vorteile von Off-Canvas-Layouts:</h2>
+                <ul id="text">
+                    <li>
+                        Platzersparnis: Off-Canvas-Layouts bieten eine effiziente Nutzung des begrenzten Bildschirmplatzes auf mobilen Geräten, 
+                        indem sekundäre Inhalte und Menüs ausgeblendet werden, wenn sie nicht benötigt werden.
+                    </li>
+                    <li>
+                        Fokus auf Hauptinhalt: Die Technik ermöglicht es, den Fokus auf den Hauptinhalt zu legen, indem sekundäre Informationen 
+                        dezent im Hintergrund gehalten werden, bis der Benutzer darauf zugreifen möchte.
+                    </li>
+                    <li>
+                        Bessere Benutzererfahrung: Durch das Ausblenden von Nebeninformationen wird die Benutzeroberfläche übersichtlicher, 
+                        was zu einer verbesserten Benutzererfahrung führt.
+                    </li>
+                    <li>
+                        Geschwindigkeitsoptimierung: Da weniger Daten auf einmal geladen werden müssen, können Off-Canvas-Layouts dazu beitragen, die 
+                        Ladezeiten zu verbessern und somit die Performance der Website zu steigern.
+                    </li>
+                </ul>
+
+        
+                <h2>Nachteile von Off-Canvas-Layouts:</h2>
+<p>
+    Entdeckbarkeit: Einige Benutzer könnten Schwierigkeiten haben, versteckte Menüs oder Inhalte zu finden, insbesondere wenn die Off-Canvas-Navigation nicht klar gekennzeichnet ist.
+
+    Komplexität der Umsetzung: Die Implementierung von Off-Canvas-Layouts erfordert zusätzlichen JavaScript-Code und kann die Entwicklung komplexer machen.
+
+    SEO-Herausforderungen: Suchmaschinen könnten Schwierigkeiten haben, den ausgeblendeten Inhalt zu indizieren, was potenziell Auswirkungen auf die Suchmaschinenoptimierung haben könnte.
+
+    Nicht für jede Art von Inhalt geeignet: In einigen Fällen, wie bei umfangreichen Navigationsstrukturen, ist ein traditionelles Layout möglicherweise besser geeignet, um alle erforderlichen Informationen zugänglich zu machen.
+
+Fazit:
+
+Off-Canvas-Layouts sind eine leistungsstarke Lösung, um den Herausforderungen des responsiven Webdesigns zu begegnen. Die Entscheidung für oder gegen diese Technik sollte jedoch sorgfältig abgewogen werden, indem die spezifischen Anforderungen der Website und die Bedürfnisse der Benutzer berücksichtigt werden.
+                </p>
+            </div>
+            <div id="sources">
+                <h3>Quellen</h3>
+                <p>
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeSources()">&times;</a><br>
+                    <br>
+                    <a href="http://mediaqueri.es">http://mediaqueri.es</a><br>
+                    <br>
+                    <a href="http://www.vanseodesign.com/web-design/responsive-layout-patterns/">
+                    http://www.vanseodesign.com/web-design/responsive-layout-patterns/
+                    </a><br>
+                    <br>
+                    <a href="http://www.lukew.com/ff/entry.asp?1517">http://www.lukew.com/ff/entry.asp?1517</a><br>
+                    <br>
+                    <a href="http://www.lukew.com/ff/entry.asp?1514">http://www.lukew.com/ff/entry.asp?1514</a><br>
+                    <br>
+                    <a href="https://developers.google.com/web/fundamentals/design-and-
+                    ux/responsive/patterns">
+                        https://developers.google.com/web/fundamentals/design-and-
+                        ux/responsive/patterns
+                    </a>
+                </p>
+            </div>
+
+            <footer>
+                <address>
+                    <b>Autor:</b> Clara Bickenbach, Linda Stängle<br>
+                    <b>E-Mail:</b> xxxxx<br>
+                    <b>Adresse:</b> xxxxx<br>
+                    <b>Land:</b> xxxxx
+                </address> 
+            </footer>
+        </div>
+        <script>
+            function openNav() {
+              document.getElementById("mySidenav").style.width = "250px";
+            //   document.getElementById("main").style.marginLeft = "250px";
+            }
+            
+            function closeNav() {
+              document.getElementById("mySidenav").style.width = "0";
+            //   document.getElementById("main").style.marginLeft= "0";
+            }
+            function openSources() {
+              document.getElementById("sources").style.width = "250px";
+            //   document.getElementById("main").style.marginLeft = "250px";
+            }
+            
+            function closeSources() {
+              document.getElementById("sources").style.width = "0";
+            //   document.getElementById("main").style.marginLeft= "0";
+            }
+            </script>
+    </body>
+</html>

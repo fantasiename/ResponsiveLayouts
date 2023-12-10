@@ -1,0 +1,347 @@
+body{
+    margin: 0;
+}
+.container {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    display: grid;
+    /* grid-gap: 10px; */
+    min-height: 100vh;
+}
+
+header{
+    grid-area: header;
+    background-color: rgb(238, 237, 237);
+}
+
+header>h1{
+    text-align: center;
+}
+
+#navigation{
+    grid-area: nav;
+    background-color: coral;
+}
+
+#extra{
+    padding-top: 40px;
+    grid-area: extra;
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+#extra>img{
+    /* margin: 0px 0px 20px 0px; */
+    padding: 8px 8px 8px 60px;
+    width: 80%;
+    background-color: aquamarine;
+}
+#extra>h3{
+    padding-left: 60px;
+}
+span{
+    font-size: small;
+    line-height: 0.9;
+}
+
+#extra>p{
+    margin-top: 0;
+    width:80%;
+    padding-left: 60px;
+    padding-right: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 70px;
+    background-color: rgba(127, 255, 212, 0.5);
+    /* background-color: aquamarine; */
+    
+}
+
+#main{
+    grid-area: main;
+    line-height: 1.2;
+    text-align: justify;
+    padding: 20px 60px;
+    /* background-color: brown; */
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, auto);
+    grid-template: 
+    "mainH mainH"
+    "grafik section1"
+    "section2 section2"
+    "section3 section4"
+    "section5 section5";
+    align-items: start;
+}
+
+#mainHeading{
+    grid-area: mainH;
+}
+
+#grafik1{
+    padding-left: 0px;
+    grid-area: grafik;
+    padding-right: 15px;
+    /* background-color: blue; */
+}
+
+#section1{
+    grid-area: section1;
+    padding-left: 15px;
+}
+
+#section2{
+    grid-area: section2;
+}
+
+#section2 > img{
+    padding: 20px 0px;
+}
+
+#section3{
+    grid-area: section3;
+    padding-right: 15px;
+}
+
+#section4{
+    grid-area: section4;
+    padding-left: 15px;
+}
+
+#section5{
+    grid-area: section5;
+}
+
+#contactSources{
+    grid-area: right;
+    display: flex;
+    flex-direction: column;
+}
+
+#sources{
+    /* grid-area: sources; */
+    /* background-color: chartreuse; */
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+#impressum{
+    /* grid-area: impressum; */
+    background-color: coral;
+    margin: 50px;
+}
+
+#impressum>img, #impressum>address{
+    padding: 20px;
+}
+
+footer{
+    grid-area: footer;
+    background-color: rgb(238, 237, 237);
+    min-height: 100px;
+}
+
+#navigation > ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap; /*Verhindert das Umbruchverhalten der Liste */
+    /* min-height: 70px; */
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#navigation > ul >li {
+    display: inline-block;
+    padding: 20px;
+    font-size: large;
+}
+
+li > a {
+    text-decoration: none;
+    color: rgb(238, 237, 237);
+}
+
+#sources a{
+    text-decoration: none;
+    color:black;
+}
+
+#sources p{
+    margin: 0px 50px;
+    padding: 20px;
+    border-color: coral;
+    border-style: none none none solid;
+}
+
+#sources h3{
+    padding: 30px 50px 0px 50px;
+}
+
+@media only screen and (max-width: 500px) {
+    .container{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(7, auto);
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "extra"
+            "right"
+            "footer";
+    }
+
+    #navigation > ul{
+        flex-direction: column;
+    }
+
+    #main{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(7, auto);
+        grid-template: 
+        "mainH"
+        "grafik" 
+        "section1"
+        "section2"
+        "section3" 
+        "section4"
+        "section5";
+        align-items: start;
+    }
+
+    #extra p:last-child{
+        margin-bottom: 0px;
+    }
+
+    #grafik1{
+        padding-left: 0px;
+        padding-right: 0px;
+        /* background-color: blue; */
+    }
+    
+    #section1{
+        padding-left: 0px;
+    }
+    
+    #section3{
+        padding-right: 0px;
+    }
+    
+    #section4{
+        padding-left: 0px;
+    }
+}
+  
+@media only screen and (min-width: 500px) {
+    .container{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, auto);
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "extra"
+            "right"
+            "footer";
+    }
+
+    #contactSources{
+        flex-direction: row;
+        align-items: end;
+    }
+
+    #impressum{
+        max-width: 35%;
+        max-height: 60%;
+    }
+
+    #extra>h3{
+        padding-left: 180px;
+    }
+
+    #extra>img{
+        /* margin: 0px 0px 20px 0px; */
+        padding: 18px 18px 18px 180px;
+        width: 45%;
+        background-color: aquamarine;
+    }
+    
+    #extra>p{
+        margin-top: 0;
+        width:45%;
+        padding-left: 180px;
+        padding-right: 18px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-bottom: 50px; 
+    }
+
+    #grafik1{
+        padding-left: 0px;
+        padding-right: 15px;
+        /* background-color: blue; */
+    }
+    
+    #section1{
+        padding-left: 15px;
+    }
+    
+    #section3{
+        padding-right: 15px;
+    }
+    
+    #section4{
+        padding-left: 15px;
+    }
+}
+  
+@media only screen and (min-width: 1280px) {
+    .container{
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas:
+            "header header header"
+            "nav nav nav"
+            "extra main right"
+            "extra main right"
+            "footer footer footer";
+    }
+
+    #contactSources{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #impressum{
+        max-width: 100%;
+    }
+
+    #extra>h3{
+        padding-left: 60px;
+    }
+
+    #extra>img{
+        /* margin: 0px 0px 20px 0px; */
+        padding: 8px 8px 8px 60px;
+        width: 80%;
+        background-color: aquamarine;
+    }
+    
+    #extra>p{
+        margin-top: 0;
+        width:80%;
+        padding-left: 60px;
+        padding-right: 8px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-bottom: 70px; 
+    }
+}
+

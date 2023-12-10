@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="columnDrop.css">
+        <title>Grid Layout Leer</title>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <img src="bannerResponsive.png" width="100%">
+                <h1>Responsive Layouts</h1>
+            </header>
+            <div id="navigation">
+                <ul>
+                    <li id="menue"><a href="#">Not Responsive</a></li>
+                    <li id="menue"><a href="#">Mostly Fluid</a></li>
+                    <li id="menue"><a href="#">Column Drop</a></li>
+                    <li id="menue"><a href="#">Layout Shifter</a></li>
+                    <li id="menue"><a href="offCanvas.html">Off-Canvas</a></li>
+                </ul>
+            </div>
+            <div id="extra">
+                <h3>More Information</h3>
+                <img alt="" src="extra5.png">
+                <p>
+                    Auch interessant:<br>
+                    Mehr zur Layoutgestaltung mit Grid.<br>
+                    <a href="https://uxdesign.cc/responsive-grids-and-how-to-actually-use-them-common-ui-layouts-7073293697f8">https://uxdesign.cc/responsive-grids-and-how-to-actually-use-them-common-ui-layouts-7073293697f8</a><br>
+                    <br>
+                    <span>Grafikadresse: https://miro.medium.com/v2/resize:fit:1400/1*F_khlcxoMUtGDtbcDIk1uQ.png</span>
+                </p>
+                <img alt="" src="extra4.jpg">
+                <p>
+                    Desktop First oder Mobile First?<br>
+                    <a href="https://technobrains.io/mobile-first-or-desktop-first-what-do-you-prefer/">https://technobrains.io/mobile-first-or-desktop-first-what-do-you-prefer/</a><br>
+                    <br>
+                    <span>Grafikadresse: https://evondev.com/wp-content/uploads/2021/08/mobile-first-vs-desktop-first-1200x580.jpg</span>
+                </p>
+                <img alt="" src="extra1.jpg">
+                <p>
+                    Vorsicht: Nicht einfach untereinander anordnen, die genaue Anordnung bei Column-Drop muss dennoch durchdacht werden.
+                    <br><br>
+                    <span>Grafikadresse: https://images.squarespace-cdn.com/content/v1/613023867b6251219ad288eb/1630546005156-C6AN3RSWTIKW2AR6NFZ3/columns+laptop+view+macbook+mockup.jpg</span>
+                </p>
+                
+            </div>
+            <div id="main">
+                <h1 id="mainHeading">Column-Drop</h1>
+                <div id="section1">
+                    <h3>Definition</h3>
+                    <p>
+                        Column-Drop ist eine responsive Design-Technik, die darauf abzielt, 
+                        den Inhalt einer Webseite oder Anwendung auf verschiedenen 
+                        Bildschirmgrößen optimal darzustellen. Bei dieser Methode werden 
+                        die Spalten einer mehrspaltigen Anordnung auf kleinen Bildschirmen 
+                        in eine einzige Spalte umgewandelt, um die Benutzerfreundlichkeit 
+                        auf mobilen Geräten zu verbessern.<br>
+                        <br>
+                        <span>Grafikadresse: https://carlosazaustre.es/images/los-5-patrones-del-responsive-design/column-drop.png</span>
+                    </p>
+                </div>
+                <div id="grafik1">
+                    <img alt="Grafik columnDrop" src="column-drop2.png" width="85%">
+                </div>
+                <div id="section2">
+                    <h3>Anwendungsfelder</h3>
+                    <p>
+                        Column-Drop findet breite Anwendung in der Webentwicklung, insbesondere 
+                        bei responsiven Designs für Websites und Webanwendungen. Dies ist 
+                        besonders wichtig, da Benutzer heutzutage auf einer Vielzahl von Geräten 
+                        mit unterschiedlichen Bildschirmgrößen auf Webinhalte zugreifen.
+                    <ul>
+                        <li>
+                            <b>Unternehmenswebsites:</b> Firmenpräsentationen und -portfolios können auf Desktops 
+                            in mehreren Spalten angezeigt werden, während sie auf Mobilgeräten zu einer 
+                            einzigen Spalte umgewandelt werden, um eine optimale Lesbarkeit zu gewährleisten.
+                        </li>
+                        <li>
+                            <b>E-Commerce-Plattformen:</b> Produktlisten und -details können auf großen Bildschirmen in Spalten 
+                            organisiert werden, während auf kleineren Bildschirmen eine einzige Spalte
+                            verwendet wird, um den Fokus auf Produkte und den Bestellprozess zu erleichtern.
+                        </li>
+                        <li>
+                            <b>Medien- und Nachrichtenwebsites:</b> Artikel und Multimedia-Inhalte können auf verschiedenen
+                            Geräten gut lesbar präsentiert werden, wobei sich die Anordnung je nach Bildschirmgröße anpasst.
+                        </li>
+                    </ul>
+                    </p>
+                    <h3>Desktop-First</h3>
+                    <p>
+                        Der Ansatz des "Desktop-First" bedeutet, dass das ursprüngliche Design für Desktop-Geräte optimiert 
+                        ist. Bei Column-Drop wird das mehrspaltige Layout zuerst für Desktop-Ansichten erstellt und dann 
+                        durch Media Queries so angepasst, dass es auf kleineren Bildschirmen wie Tablets oder Smartphones 
+                        optimal dargestellt wird.<br>
+                        <br>
+                        <span>Grafikadresse: https://projectpi.ca/wp-content/uploads/2022/11/desktop-first-web-design.png</span>
+                    </p>
+                    <img alt="desktop first" src="desktopFirst.png" width="100%">
+                </div>
+                <div id="section3">
+                    <h3>Vorteile</h3>
+                    <p>
+                    <ul>
+                        <li>
+                            Benutzerfreundlichkeit: Column-Drop verbessert die Benutzerfreundlichkeit, indem es den 
+                            Inhalt auf kleinen Bildschirmen leichter lesbar macht und eine bessere Navigation 
+                            ermöglicht.
+                        </li>
+                        <li>
+                            Optimierte Darstellung: Durch die Umwandlung von mehreren Spalten in eine einzige Spalte 
+                            wird der Inhalt besser auf kleinen Bildschirmen organisiert und verhindert, dass 
+                            Informationen verloren gehen.
+                        </li>
+                        <li>
+                            Responsive Design: Column-Drop ist Teil eines umfassenden Ansatzes für responsives 
+                            Webdesign, der sicherstellt, dass eine Website auf verschiedenen Geräten und 
+                            Bildschirmgrößen konsistent und ansprechend aussieht.
+                        </li>
+                    </ul>
+                    </p>
+                </div>
+                <div id="section4">
+                    <h3>Nachteile</h3>
+                    <p>
+                        <ul>
+                            <li>
+                                Komplexität: Die Implementierung von Column-Drop erfordert ein sorgfältiges Design 
+                                und die Verwendung von Media Queries, was zu einem komplexeren Entwicklungsprozess 
+                                führen kann.
+                            </li>
+                            <li>
+                                Begrenzte Gestaltungsfreiheit: Das mehrspaltige Layout auf Desktops bietet 
+                                möglicherweise mehr Gestaltungsfreiheit, die bei der Umstellung auf eine einzige 
+                                Spalte eingeschränkt sein kann.
+                            </li>
+                            <li>
+                                Ladezeit: Bei umfangreichen Inhalten kann die Umwandlung in eine einzige Spalte auf 
+                                kleinen Bildschirmen zu einer längeren Ladezeit führen.
+                            </li>
+                        </ul>
+                        </p>
+                </div>
+                <div id="section5">
+                    <h3>Fazit</h3>
+                    <p>
+                        In der dynamischen Welt des Webdesigns, in der Benutzer mit einer Vielzahl von Geräten und 
+                        Bildschirmgrößen auf digitale Inhalte zugreifen, erweist sich Column-Drop als eine äußerst 
+                        effektive Methode im Bereich des responsiven Designs. Die Fähigkeit, den Inhalt nahtlos 
+                        an unterschiedliche Anforderungen anzupassen, macht diese Technik zu einer unverzichtbaren 
+                        Komponente für moderne Webentwicklung.
+                        <br>
+                        Die sorgfältige Anwendung von Column-Drop ermöglicht es, die Vorteile dieser Methode zu maximieren. 
+                        Durch die Umwandlung mehrspaltiger Layouts auf kleinen Bildschirmen in eine einzige Spalte 
+                        wird nicht nur die Benutzerfreundlichkeit verbessert, sondern auch eine optimale Darstellung 
+                        des Inhalts gewährleistet. Die Anpassung an verschiedene Bildschirmgrößen gewährleistet eine 
+                        konsistente und angenehme Nutzererfahrung, unabhängig davon, ob die Webseite auf einem Desktop, 
+                        Tablet oder Smartphone betrachtet wird.
+                        <br>
+                        Trotz der zahlreichen Vorteile von Column-Drop ist es entscheidend, die spezifischen Anforderungen 
+                        jedes Projekts zu berücksichtigen. Die Implementierung sollte sorgfältig geplant und auf die Bedürfnisse 
+                        der Zielgruppe abgestimmt werden. Dies erfordert nicht nur ein tiefes Verständnis für das Design, 
+                        sondern auch eine gründliche Kenntnis der Inhalte und Nutzungsszenarien.
+                        <br>
+                        Es ist wichtig anzumerken, dass, während Column-Drop viele positive Aspekte aufweist, auch einige 
+                        Herausforderungen vorhanden sind. Die Komplexität der Implementierung und mögliche Einschränkungen 
+                        in der Gestaltungsfreiheit sind Faktoren, die in Betracht gezogen werden müssen. Dennoch überwiegen die 
+                        Vorteile, insbesondere wenn man bedenkt, dass die Mehrheit der Internetnutzer heutzutage mobile Geräte verwendet.
+                        <br>
+                        Insgesamt stellt Column-Drop eine bedeutsame Antwort auf die Anforderungen des responsiven Webdesigns dar. 
+                        Durch die geschickte Anwendung dieser Methode können Webentwickler sicherstellen, dass ihre Webseiten und 
+                        Anwendungen auf verschiedenen Geräten optimal funktionieren und den Benutzern eine herausragende Erfahrung bieten. 
+                        Es ist ein Werkzeug, das nicht nur die Herausforderungen der Vielfalt von Bildschirmgrößen bewältigt, sondern 
+                        auch dazu beiträgt, die Zukunft des Webdesigns mitzugestalten.
+                    </p>
+                </div>
+                
+            </div>
+            <div id="contactSources">
+                <div id="sources">
+                    <h3>Quellen</h3>
+                    <p>
+                        <a href="http://mediaqueri.es">http://mediaqueri.es</a><br>
+                        <br>
+                        <a href="http://www.vanseodesign.com/web-design/responsive-layout-patterns/">
+                        http://www.vanseodesign.com/web-design/responsive-layout-patterns/
+                        </a><br>
+                        <br>
+                        <a href="http://www.lukew.com/ff/entry.asp?1517">http://www.lukew.com/ff/entry.asp?1517</a><br>
+                        <br>
+                        <a href="http://www.lukew.com/ff/entry.asp?1514">http://www.lukew.com/ff/entry.asp?1514</a><br>
+                        <br>
+                        <a href="https://developers.google.com/web/fundamentals/design-and-
+                        ux/responsive/patterns">
+                            https://developers.google.com/web/fundamentals/design-and-
+                            ux/responsive/patterns
+                        </a>
+                    </p>
+                </div>
+                <div id="impressum">
+                    <img alt="icons" src="socialMedia.png" width="80%">
+                    <address>
+                        <b>Autor:</b> Clara Bickenbach, Linda Stängle<br>
+                        <b>E-Mail:</b> xxxxx<br>
+                        <b>Adresse:</b> xxxxx<br>
+                        <b>Land:</b> xxxxx
+                    </address> 
+                </div>
+            </div>
+            
+            <footer></footer>
+        </div>
+    </body>
+</html>
