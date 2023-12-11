@@ -9,85 +9,144 @@
     <body>
         <div class="container">
             <header>
-            <img class="headerImg" alt="Banner" src="bannerResponsive.png" width="100%">
+            <img class="headerImg" alt="Banner" src="bannerResponsive.png" >
             <h1 class="headerText" id="mainHeading">Responsive Layouts</h1>
-            <button class="headerButtonLeft" onclick="openNav()"><img alt="Banner" src="menuButton.png"></button>
-            <button class="headerButtonRight" onclick="openSources()"><img alt="Banner" src="quellen.png"></button>
+            <img class="socialMediaHeader" alt="socialMedia" src="socialMedia.png"> 
+            <button class="headerButtonLeft" onclick="openNav()"><img alt="Banner" src="menuButton1.png"></button>
+            <button class="headerButtonRight" onclick="openSources()"><img alt="Banner" src="quellen1.png"></button>
         </header>
-        <div class="sidenav" id="mySidenav">
+        <div class="sidenavMobile" id="mySidenavMobile">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <ul>
-                <li id="menue"><a href="#">Not Responsive</a></li>
-                <li id="menue"><a href="#">Mostly Fluid</a></li>
-                <li id="menue"><a href="#">Column Drop</a></li>
-                <li id="menue"><a href="#">Layout Shifter</a></li>
-                <li id="menue"><a href="#">Off-Canvas</a></li>
+                <li><a href="#">Not Responsive</a></li>
+                <li><a href="#">Mostly Fluid</a></li>
+                <li><a href="columnDrop.html">Column Drop</a></li>
+                <li><a href="#">Layout Shifter</a></li>
+                <li><a href="#">Off-Canvas</a></li>
             </ul>
         </div>
-            <div id="navigation" class="sidenav">
+            <div class="sidenav" id="mySidenav">
                 <ul>
-                    <li id="menue"><a href="#">Not Responsive</a></li>
-                    <li id="menue"><a href="#">Mostly Fluid</a></li>
-                    <li id="menue"><a href="columnDrop.html">Column Drop</a></li>
-                    <li id="menue"><a href="#">Layout Shifter</a></li>
-                    <li id="menue"><a href="#">Off-Canvas</a></li>
+                    <li><a href="#">Not Responsive</a></li>
+                    <li><a href="#">Mostly Fluid</a></li>
+                    <li><a href="columnDrop.html">Column Drop</a></li>
+                    <li><a href="#">Layout Shifter</a></li>
+                    <li><a href="#">Off-Canvas</a></li>
                 </ul>
             </div>
             <div id="main">
-                <h1>Off-Canvas</h1>
+                <h2>Off-Canvas</h2>
+                <h3>Definition</h3>
                 <p>
                     Das Off-Canvas-Layout ist eine fortschrittliche Technik im Bereich des responsiven Webdesigns, 
                     die dazu dient, den begrenzten Bildschirmplatz auf mobilen Geräten optimal zu nutzen. 
                     Im Wesentlichen handelt es sich dabei um eine Methode, bei der der Hauptinhalt außerhalb des 
                     sichtbaren Bereichs verschoben wird und nur bei Bedarf eingeblendet wird.
+                    Diese innovative Technik verbessert die Benutzerfreundlichkeit, indem sie es ermöglicht, 
+                    zusätzlichen Inhalt oder Navigationselemente auf mobile Geräte zu übertragen, 
+                    ohne den begrenzten Bildschirmraum zu überlasten. Der Fokus liegt auf einer effizienten 
+                    Darstellung, wodurch Nutzer nahtlos zwischen verschiedenen Inhalten und Funktionen wechseln 
+                    können, ohne von unnötigem Ballast beeinträchtigt zu werden.
                 </p>
-                <h2>Was ist Off-Canvas?</h2>
+                <img class="desktopImg" alt="" src="offCanvas.png">
+                <img class="mobileImg" alt="" src="offCanvasA.png">
+                <img class="mobileImg" alt="" src="offCanvasB.png">
+                <span id="bildquelle" style="font-size: small; text-align: left;">Grafikadresse: https://i.pinimg.com/originals/ff/73/38/ff733848090cda421f58c6d92052fa65.png</span>
+                <h3 style="margin-top: 30px;">Mobile First</h3>
                 <p>
-                    Off-Canvas bezieht sich auf einen Bereich außerhalb des aktuellen Anzeigebereichs, der 
-                    normalerweise unsichtbar ist. Bei der Anwendung auf Webdesign wird der Hauptinhalt außerhalb 
-                    des sichtbaren Bildschirms platziert und kann durch Interaktionen wie das Klicken auf ein Hamburger-Menü 
-                    oder das Wischen nach links eingeblendet werden.
+                    "Mobile First" ist eine Designphilosophie im Webdesign, die darauf abzielt, Websites und Anwendungen 
+                    zunächst für mobile Geräte zu optimieren und sie dann für größere Bildschirme anzupassen. Der Ansatz 
+                    berücksichtigt die stetig wachsende Nutzung von Smartphones und Tablets und priorisiert die Entwicklung 
+                    von Inhalten, Benutzeroberflächen und Funktionen für mobile Endgeräte. Indem man sich zuerst auf die kleineren 
+                    Bildschirmgrößen konzentriert, wird eine bessere Benutzererfahrung für Mobilgeräte erreicht, bevor man die 
+                    Anpassungen für größere Bildschirme vornimmt. Dies fördert Effizienz, Zugänglichkeit und responsives Design.
                 </p>
-                <h2>Vorteile von Off-Canvas-Layouts:</h2>
-                <ul id="text">
-                    <li>
-                        Platzersparnis: Off-Canvas-Layouts bieten eine effiziente Nutzung des begrenzten Bildschirmplatzes auf mobilen Geräten, 
+                
+                <h3>Vorteile</h3>
+                <p>
+                    <span>
+                        <b>Platzersparnis:</b> Off-Canvas-Layouts bieten eine effiziente Nutzung des begrenzten Bildschirmplatzes auf mobilen Geräten, 
                         indem sekundäre Inhalte und Menüs ausgeblendet werden, wenn sie nicht benötigt werden.
-                    </li>
-                    <li>
-                        Fokus auf Hauptinhalt: Die Technik ermöglicht es, den Fokus auf den Hauptinhalt zu legen, indem sekundäre Informationen 
+                    </span>
+                    <br>
+                    <br>
+                    <span>
+                        <b>Fokus auf Hauptinhalt:</b> Die Technik ermöglicht es, den Fokus auf den Hauptinhalt zu legen, indem sekundäre Informationen 
                         dezent im Hintergrund gehalten werden, bis der Benutzer darauf zugreifen möchte.
-                    </li>
-                    <li>
-                        Bessere Benutzererfahrung: Durch das Ausblenden von Nebeninformationen wird die Benutzeroberfläche übersichtlicher, 
+                    </span>
+                    <br>
+                    <br>
+                    <span>
+                        <b>Bessere Benutzererfahrung:</b> Durch das Ausblenden von Nebeninformationen wird die Benutzeroberfläche übersichtlicher, 
                         was zu einer verbesserten Benutzererfahrung führt.
-                    </li>
-                    <li>
-                        Geschwindigkeitsoptimierung: Da weniger Daten auf einmal geladen werden müssen, können Off-Canvas-Layouts dazu beitragen, die 
+                    </span>
+                    <br>
+                    <br>
+                    <span>
+                        <b>Geschwindigkeitsoptimierung:</b> Da weniger Daten auf einmal geladen werden müssen, können Off-Canvas-Layouts dazu beitragen, die 
                         Ladezeiten zu verbessern und somit die Performance der Website zu steigern.
-                    </li>
-                </ul>
+                    </span>
+                </p>
 
-        
-                <h2>Nachteile von Off-Canvas-Layouts:</h2>
-<p>
-    Entdeckbarkeit: Einige Benutzer könnten Schwierigkeiten haben, versteckte Menüs oder Inhalte zu finden, insbesondere wenn die Off-Canvas-Navigation nicht klar gekennzeichnet ist.
-
-    Komplexität der Umsetzung: Die Implementierung von Off-Canvas-Layouts erfordert zusätzlichen JavaScript-Code und kann die Entwicklung komplexer machen.
-
-    SEO-Herausforderungen: Suchmaschinen könnten Schwierigkeiten haben, den ausgeblendeten Inhalt zu indizieren, was potenziell Auswirkungen auf die Suchmaschinenoptimierung haben könnte.
-
-    Nicht für jede Art von Inhalt geeignet: In einigen Fällen, wie bei umfangreichen Navigationsstrukturen, ist ein traditionelles Layout möglicherweise besser geeignet, um alle erforderlichen Informationen zugänglich zu machen.
-
-Fazit:
-
-Off-Canvas-Layouts sind eine leistungsstarke Lösung, um den Herausforderungen des responsiven Webdesigns zu begegnen. Die Entscheidung für oder gegen diese Technik sollte jedoch sorgfältig abgewogen werden, indem die spezifischen Anforderungen der Website und die Bedürfnisse der Benutzer berücksichtigt werden.
+                <h3>Nachteile</h3>
+                <p>
+                    <span>
+                        <b>Entdeckbarkeit:</b> Einige Benutzer könnten Schwierigkeiten haben, versteckte Menüs oder Inhalte zu finden, 
+                        insbesondere wenn die Off-Canvas-Navigation nicht klar gekennzeichnet ist.
+                    </span>
+                    <br>
+                    <br>
+                    <span>
+                        <b>Komplexität der Umsetzung:</b> Die Implementierung von Off-Canvas-Layouts erfordert zusätzlichen JavaScript-Code 
+                        und kann die Entwicklung komplexer machen.
+                    </span>
+                    <br>
+                    <br>
+                    <span>
+                        <b>Nicht für jede Art von Inhalt geeignet:</b> In einigen Fällen, wie bei umfangreichen Navigationsstrukturen, ist ein traditionelles 
+                        Layout möglicherweise besser geeignet, um alle erforderlichen Informationen zugänglich zu machen.
+                    </span>
+                </p>
+                <h3>Fazit</h3>
+                <p>
+                    Off-Canvas-Layouts sind eine leistungsstarke Lösung, um den Herausforderungen des responsiven Webdesigns zu begegnen. Die Entscheidung für oder 
+                    gegen diese Technik sollte jedoch sorgfältig abgewogen werden, indem die spezifischen Anforderungen der Website und die Bedürfnisse der Benutzer 
+                    berücksichtigt werden.
                 </p>
             </div>
             <div id="sources">
+                <!-- <img alt="" src="bsp7.png"> -->
+                <img alt="" src="hintergrundA.png" id="firstPic">
+                <img alt="" src="hintergrundB.png" id="secondPic">
+                <img alt="" src="hintergrundC.png" id="thirdPic">
+                
+                <div>
+                    <h3>Quellen</h3>
+                    <p>
+                    <a href="http://mediaqueri.es">http://mediaqueri.es</a><br>
+                    <br>
+                    <a href="http://www.vanseodesign.com/web-design/responsive-layout-patterns/">
+                    http://www.vanseodesign.com/web-design/responsive-layout-patterns/
+                    </a><br>
+                    <br>
+                    <a href="http://www.lukew.com/ff/entry.asp?1517">http://www.lukew.com/ff/entry.asp?1517</a><br>
+                    <br>
+                    <a href="http://www.lukew.com/ff/entry.asp?1514">http://www.lukew.com/ff/entry.asp?1514</a><br>
+                    <br>
+                    <a href="https://developers.google.com/web/fundamentals/design-and-
+                    ux/responsive/patterns">
+                        https://developers.google.com/web/fundamentals/design-and-
+                        ux/responsive/patterns
+                    </a>
+                    </p>
+                </div>
+                <img alt="" src="hintergrundD.png" id="fourthPic">
+            </div>
+            <div id="sourcesMobile">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeSources()">&times;</a>
                 <h3>Quellen</h3>
                 <p>
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeSources()">&times;</a><br>
+                    
                     <br>
                     <a href="http://mediaqueri.es">http://mediaqueri.es</a><br>
                     <br>
@@ -118,22 +177,31 @@ Off-Canvas-Layouts sind eine leistungsstarke Lösung, um den Herausforderungen d
         </div>
         <script>
             function openNav() {
-              document.getElementById("mySidenav").style.width = "250px";
-            //   document.getElementById("main").style.marginLeft = "250px";
+                var screenWidth = window.innerWidth;
+
+                if (screenWidth > 580) { 
+                    document.getElementById("mySidenavMobile").style.width = "50%";
+                } else {
+                    document.getElementById("mySidenavMobile").style.width = "100%";
+                }
             }
             
             function closeNav() {
-              document.getElementById("mySidenav").style.width = "0";
-            //   document.getElementById("main").style.marginLeft= "0";
+              document.getElementById("mySidenavMobile").style.width = "0";
             }
+
             function openSources() {
-              document.getElementById("sources").style.width = "250px";
-            //   document.getElementById("main").style.marginLeft = "250px";
+                var screenWidth = window.innerWidth;
+
+                if (screenWidth > 580) { 
+                    document.getElementById("sourcesMobile").style.width = "50%";
+                } else {
+                    document.getElementById("sourcesMobile").style.width = "100%";
+                }
             }
             
             function closeSources() {
-              document.getElementById("sources").style.width = "0";
-            //   document.getElementById("main").style.marginLeft= "0";
+              document.getElementById("sourcesMobile").style.width = "0px";
             }
             </script>
     </body>

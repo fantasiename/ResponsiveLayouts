@@ -6,7 +6,6 @@ body{
     padding: 0;
     font-family: Arial;
     display: grid;
-    /* grid-gap: 10px; */
     min-height: 100vh;
 }
 
@@ -27,14 +26,12 @@ header>h1{
 #extra{
     padding-top: 40px;
     grid-area: extra;
-    /* background-color: aquamarine; */
     display: flex;
     flex-direction: column;
     align-items: start;
 }
 
 #extra>img{
-    /* margin: 0px 0px 20px 0px; */
     padding: 8px 8px 8px 60px;
     width: 80%;
     background-color: aquamarine;
@@ -56,8 +53,6 @@ span{
     padding-bottom: 10px;
     margin-bottom: 70px;
     background-color: rgba(127, 255, 212, 0.5);
-    /* background-color: aquamarine; */
-    
 }
 
 #main{
@@ -77,6 +72,7 @@ span{
     "section5 section5";
     align-items: start;
 }
+
 
 #mainHeading{
     grid-area: mainH;
@@ -123,14 +119,11 @@ span{
 }
 
 #sources{
-    /* grid-area: sources; */
-    /* background-color: chartreuse; */
     margin-top: 10px;
     margin-bottom: 40px;
 }
 
 #impressum{
-    /* grid-area: impressum; */
     background-color: coral;
     margin: 50px;
 }
@@ -150,8 +143,7 @@ footer{
     list-style-type: none;
     margin: 0;
     padding: 0;
-    white-space: nowrap; /*Verhindert das Umbruchverhalten der Liste */
-    /* min-height: 70px; */
+    white-space: nowrap; 
     align-items: center;
     justify-items: center;
     justify-content: center;
@@ -223,7 +215,6 @@ li > a {
     #grafik1{
         padding-left: 0px;
         padding-right: 0px;
-        /* background-color: blue; */
     }
     
     #section1{
@@ -286,7 +277,6 @@ li > a {
     #grafik1{
         padding-left: 0px;
         padding-right: 15px;
-        /* background-color: blue; */
     }
     
     #section1{
@@ -328,7 +318,6 @@ li > a {
     }
 
     #extra>img{
-        /* margin: 0px 0px 20px 0px; */
         padding: 8px 8px 8px 60px;
         width: 80%;
         background-color: aquamarine;
